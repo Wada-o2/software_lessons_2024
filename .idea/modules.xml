@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lesson_3_math_and_data_types/lesson_3_math_and_data_types.iml" filepath="$PROJECT_DIR$/lesson_3_math_and_data_types/lesson_3_math_and_data_types.iml" />
+      <module fileurl="file://$PROJECT_DIR$/software_lessons_2024.iml" filepath="$PROJECT_DIR$/software_lessons_2024.iml" />
+    </modules>
+  </component>
+</project>

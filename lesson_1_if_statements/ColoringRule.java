@@ -42,43 +42,43 @@ public class ColoringRule {
     /* This function should make all the squares green. */
     public static Color applyAllGreen(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        return new Color(0, 255, 0);
     }
 
     /* This function should make all the squares blue. */
     public static Color applyAllBlue(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        return new Color(0, 0, 255);
     }
 
     /* This function should make all the squares yellow. */
     public static Color applyAllYellow(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        return new Color(255, 255, 0);
     }
 
     /* This function should make all the squares magenta. */
     public static Color applyAllMagenta(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        return new Color(255, 0, 255);
     }
 
     /* This function should make all the squares cyan. */
     public static Color applyAllCyan(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        return new Color(0, 255, 255);
     }
 
     /* This function should make all the squares white. */
     public static Color applyAllWhite(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        return new Color(255, 255, 255);
     }
 
     /* This function should make all the squares black. */
     public static Color applyAllBlack(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        return new Color(0, 0, 0);
     }
 
     /* This function should make every *even* numbered column index red
