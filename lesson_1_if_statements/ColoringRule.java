@@ -198,15 +198,15 @@ public class ColoringRule {
      */
     public static Color applyMonsterPattern(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        if (column_index == {1,2,3,4}) 
+        if (column_index >= 1 && column_index <= 4 && row_index >= 1 && row_index <= 4) 
         {
             return applyVerticalPattern(row_index, column_index);
         } 
-        else if (column_index == {5,6,7,8,9}) 
+        else if (column_index >= 6 && column_index <= 9 && row_index >= 1 && row_index <= 4) 
         {
             return applyHorizontalPattern(row_index, column_index);
         } 
-        else if (row_index == {5,6,7,8,9}) 
+        else if (row_index >= 6 && row_index <= 9 && column_index >= 1 && column_index <= 4) 
         {
             return applyCheckerboardPattern(row_index, column_index);
         } 
