@@ -17,19 +17,19 @@ public class ColoringRule {
      * https://htmlcolorcodes.com/ to get color codes.
      */
     public static Color apply(int row_index, int column_index) {
-        return applyAllRed(row_index, column_index);
-        // return applyAllGreen(row_index, column_index);
-        // return applyAllBlue(row_index, column_index);
-        // return applyAllYellow(row_index, column_index);
-        // return applyAllMagenta(row_index, column_index);
-        // return applyAllCyan(row_index, column_index);
-        // return applyAllWhite(row_index, column_index);
-        // return applyAllBlack(row_index, column_index);
-        // return applyVerticalPattern(row_index, column_index);
-        // return applyHorizontalPattern(row_index, column_index);
-        // return applyDiagonalPattern(row_index, column_index);
-        // return applyCrossPattern(row_index, column_index);
-        // return applyCheckerboardPattern(row_index, column_index);
+         //return applyAllRed(row_index, column_index);
+         return applyAllGreen(row_index, column_index);
+         //return applyAllBlue(row_index, column_index);
+         //return applyAllYellow(row_index, column_index);
+         //return applyAllMagenta(row_index, column_index);
+         //return applyAllCyan(row_index, column_index);
+         //return applyAllWhite(row_index, column_index);
+         //return applyAllBlack(row_index, column_index);
+         //return applyVerticalPattern(row_index, column_index);
+         //return applyHorizontalPattern(row_index, column_index);
+         //return applyDiagonalPattern(row_index, column_index);
+         //return applyCrossPattern(row_index, column_index);
+         //return applyCheckerboardPattern(row_index, column_index);
         // return applyMonsterPattern(row_index, column_index);
         // return applyKForKrunch(row_index, column_index);
     }
@@ -41,7 +41,7 @@ public class ColoringRule {
 
     /* This function should make all the squares green. */
     public static Color applyAllGreen(int row_index, int column_index) {
-        // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
+        //TODO: YOUR CODE SHOULD REPLACE THE BELOW.
         return new Color(0, 255, 0);
     }
 
@@ -88,7 +88,14 @@ public class ColoringRule {
      */
     public static Color applyVerticalPattern(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        if (column_index % 2 == 0) 
+        {
+            return new Color(255, 0, 0);
+        } 
+        else 
+        {
+            return new Color(0, 0, 255);
+        }
     }
 
     /* This function should make every *even* numbered row index yellow
@@ -98,7 +105,14 @@ public class ColoringRule {
      */
     public static Color applyHorizontalPattern(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        if (row_index % 2 == 0) 
+        {
+            return new Color(255, 255, 0);
+        } 
+        else 
+        {
+            return new Color(255, 0, 255);
+        }
     }
 
     /* This function should make a diagonal line from the top-left of the screen to the
@@ -109,7 +123,14 @@ public class ColoringRule {
      */
     public static Color applyDiagonalPattern(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        if (row_index == column_index) 
+        {
+            return new Color(255, 0, 0);
+        } 
+        else 
+        {
+            return new Color(0, 0, 0);
+        }
     }
 
     /* This function should make a red "X" in the middle of the screen.
@@ -122,7 +143,19 @@ public class ColoringRule {
      */
     public static Color applyCrossPattern(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        if (row_index == column_index) 
+        {
+            return new Color(255, 0, 0);
+        } 
+        else if (row_index + column_index == NUM_ROWS - 1) 
+        {
+            return new Color(255, 0, 0);
+        } 
+        else 
+        {
+            return new Color(0, 0, 0);
+            
+        }
     }
 
     /* This function should make the screen look like a checkerboard!
@@ -132,7 +165,15 @@ public class ColoringRule {
      */
     public static Color applyCheckerboardPattern(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        if ((row_index + column_index) % 2 == 0) 
+        {
+            return new Color(255, 255, 255);
+        } 
+        else 
+        {
+            return new Color(0, 0, 0);
+            
+        }
     }
 
     /* This function is the "Monster" pattern. It's a frankenstein of 4 other patterns
@@ -157,7 +198,23 @@ public class ColoringRule {
      */
     public static Color applyMonsterPattern(int row_index, int column_index) {
         // TODO: YOUR CODE SHOULD REPLACE THE BELOW.
-        return new Color(255, 0, 0);
+        if (column_index == {1,2,3,4}) 
+        {
+            return applyVerticalPattern(row_index, column_index);
+        } 
+        else if (column_index == {5,6,7,8,9}) 
+        {
+            return applyHorizontalPattern(row_index, column_index);
+        } 
+        else if (row_index == {5,6,7,8,9}) 
+        {
+            return applyCheckerboardPattern(row_index, column_index);
+        } 
+        else 
+        {
+            return applyDiagonalPattern(row_index, column_index);
+            
+        }
     }
 
     /* This function should draw the letter "K" as in "Krunch Time!" 
