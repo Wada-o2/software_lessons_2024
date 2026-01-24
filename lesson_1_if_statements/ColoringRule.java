@@ -18,7 +18,7 @@ public class ColoringRule {
      */
     public static Color apply(int row_index, int column_index) {
          //return applyAllRed(row_index, column_index);
-         return applyAllGreen(row_index, column_index);
+         //return applyAllGreen(row_index, column_index);
          //return applyAllBlue(row_index, column_index);
          //return applyAllYellow(row_index, column_index);
          //return applyAllMagenta(row_index, column_index);
@@ -30,7 +30,7 @@ public class ColoringRule {
          //return applyDiagonalPattern(row_index, column_index);
          //return applyCrossPattern(row_index, column_index);
          //return applyCheckerboardPattern(row_index, column_index);
-        // return applyMonsterPattern(row_index, column_index);
+        //return applyMonsterPattern(row_index, column_index);
         // return applyKForKrunch(row_index, column_index);
     }
 
