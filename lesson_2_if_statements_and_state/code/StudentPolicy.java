@@ -17,6 +17,10 @@ public class StudentPolicy implements Policy {
         robot.moveForward();
         robot.moveForward();
         robot.rotateLeft();
+        robot.moveForward();
+        robot.moveForward();
+        robot.moveForward();
+        robot.moveForward();
         // Feel free to add whatever variables you need in this class.
     }
 }

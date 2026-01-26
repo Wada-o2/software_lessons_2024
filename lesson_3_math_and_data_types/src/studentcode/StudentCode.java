@@ -61,7 +61,14 @@ public class StudentCode {
         return gcf;
     }
     public static int isPrime(int num) {
-        return -79;
+        int primeCheck = num -1;
+        while (primeCheck > 1) {
+            if (num % primeCheck == 0) {
+                return 0;
+            }
+            primeCheck--;
+        }
+        return 1;
     }
 
     public static int hypotenuse(int a, int b) {
