@@ -75,7 +75,7 @@ public class StudentCode {
         int aSquared = a * a;
         int bSquared = b * b;
         int cSquared = aSquared + bSquared;
-        int c = sqrt(cSquared);
+        double c = sqrt(cSquared);
         return c;
     }
 

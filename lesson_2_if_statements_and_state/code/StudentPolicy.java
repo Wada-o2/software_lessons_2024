@@ -11,16 +11,15 @@ public class StudentPolicy implements Policy {
     @Override
     public void execute(Robot robot) {
         // TODO: Write your code here.
-        robot.moveForward();
-        robot.moveForward();
-        robot.rotateRight();
-        robot.moveForward();
-        robot.moveForward();
-        robot.rotateLeft();
-        robot.moveForward();
-        robot.moveForward();
-        robot.moveForward();
-        robot.moveForward();
+        if (robot.isFrontSensorTripped() == false && robot.isLeftSensorTripped() == true && robot.isRightSensorTripped() == true)
+            {
+                robot.moveForward();
+            }
+        else 
+            {
+                robot.moveForward();
+            }
+            
         // Feel free to add whatever variables you need in this class.
     }
 }
