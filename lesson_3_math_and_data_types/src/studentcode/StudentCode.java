@@ -46,7 +46,13 @@ public class StudentCode {
     }
 
     public static int sumTo(int num) {
-        return -79;
+        int cycle = 0;
+        int sum = 0;
+        while (cycle <= num) {
+            sum = sum + cycle;
+            cycle++;
+        }
+        return sum;
     }
 
     public static int greatestCommonFactor(int num1, int num2) {
@@ -75,11 +81,17 @@ public class StudentCode {
         int aSquared = a * a;
         int bSquared = b * b;
         int cSquared = aSquared + bSquared;
-        double c = sqrt(cSquared);
+        int c = sqrt(cSquared);
         return c;
     }
 
     public static int binary8Bits(int numDecimal) {
-        return -79;
+        
+        String dingus = Integer.toString(numDecimal);
+        for(int i = 2; i < dingus.length(); i++)
+        {
+            char c = dingus.charAt(i);
+
+        }
     }
 }
